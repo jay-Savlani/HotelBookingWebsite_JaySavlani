@@ -1,0 +1,14 @@
+#logo_image {
+    height: 60px;
+    width: 60px;
+}
+
+.footer_social_media_images {
+    height: 20px;
+    width: 22px;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
