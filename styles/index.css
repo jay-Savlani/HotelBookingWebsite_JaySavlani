@@ -1,6 +1,7 @@
-.hotel_iamges {
+.hotel_images {
     width: 150px;
     height: 150px;
+    border-radius: 25%;
 }
 
 .footer_social_media_images {
@@ -8,3 +9,24 @@
     width: 22px;
 }
 
+
+
+#search_bar {
+    background-image: url('https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 380px;
+}
+
+.city_cards {
+    /* border: 2px solid red; */
+   padding: 4%;
+   display: inline-block;
+   margin: 0;
+}
+
+#card_group {
+    margin-left: 15%;
+    margin-right: 15%;
+}

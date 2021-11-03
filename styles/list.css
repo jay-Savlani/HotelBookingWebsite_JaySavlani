@@ -2,3 +2,9 @@
     height: 200px;
     width: 250px;
 }
+
+.list_view_cards {
+   background-color: rgb(132, 136, 139);
+   margin: 2%;
+   width: 40%;
+}

@@ -2,3 +2,19 @@
     height: 500px;
     width: 500px;
 }
+
+#hotel_detail_image {
+    margin-top: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+#hotel_detail_form {
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 1%;
+}
+
+#hotel_detail_description {
+    margin: 1% 4% 2% 4%;
+}

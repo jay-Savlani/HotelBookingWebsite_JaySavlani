@@ -13,27 +13,47 @@
 <body>
     <header>
         <!-- Making logo image a link -->
-        <a><img id="logo_image" src="assests/images/logo.png"  alt="logo"></a>
+        <a><img id="logo_image" src="assests/images/logo.png" alt="logo"></a>
         <a href="login.html">Login</a>
     </header>
     <section>
-        <div>
+        <div id="search_bar">
             <!-- Replacing Search Bar text with input field -->
             <input type="text" name="searched_city" placeholder="City" />
         </div>
-        <a href="list.html"><img class="hotel_images" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" alt="Delhi City"
-            height="300px" width="300px" /></a>
-        <img class="hotel_images" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" alt="Goa City" height="300px"
-            width="300px" />
-        <img class="hotel_images" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" alt="Hyderabad City" height="300px" width="300px" />
-        <img class="hotel_images" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt="Kolkata City" height="300px" width="300px" />
+        <div id="card_group">
+            <div class="city_cards">
+                <a href="list.html"><img class="hotel_images"
+                        src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" alt="Delhi City"
+                        height="300px" width="300px" /></a>
+            </div>
+            <div class="city_cards">
+                <img class="hotel_images" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg"
+                    alt="Goa City" height="300px" width="300px" />
+            </div>
+            <div class="city_cards">
+                <img class="hotel_images"
+                    src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" alt="Hyderabad City"
+                    height="300px" width="300px" />
+            </div>
+            <div class="city_cards">
+                <img class="hotel_images"
+                    src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"
+                    alt="Kolkata City" height="300px" width="300px" />
+            </div>
+            
+        </div>
+        <p><a href="#">View more >></a></p>
     </section>
     <footer>
-        <p><a href="#">View more >></a></p>
-        <p><a href="contact.html" >Contact Us</a></p>
-        <a href="https://www.facebook.com/" target="_blank"><img class="footer_social_media_images" src="assests/images/facebook.png" alt="Facebook Logo"  /></a>
-        <a href="https://www.instagram.com/" target="_blank"><img class="footer_social_media_images" src="assests/images/instagram.png" alt="Instagram Logo"  /></a>
-        <a href="https://www.twitter.com/" target="_blank"><img class="footer_social_media_images" src="assests/images/twitter.png" alt="Twitter Logo"  /></a>
+
+        <p><a href="contact.html">Contact Us</a></p>
+        <a href="https://www.facebook.com/" target="_blank"><img class="footer_social_media_images"
+                src="assests/images/facebook.png" alt="Facebook Logo" /></a>
+        <a href="https://www.instagram.com/" target="_blank"><img class="footer_social_media_images"
+                src="assests/images/instagram.png" alt="Instagram Logo" /></a>
+        <a href="https://www.twitter.com/" target="_blank"><img class="footer_social_media_images"
+                src="assests/images/twitter.png" alt="Twitter Logo" /></a>
         <p>&copy; ROOM SEARCH PVT. LTD.</p>
     </footer>
 </body>

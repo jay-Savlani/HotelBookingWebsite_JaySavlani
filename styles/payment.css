@@ -2,3 +2,21 @@
     height: 500px;
     width: 500px;
 }
+
+#payment_hotel_description {
+    height: 20%;
+    width: 50%;
+    margin: 2% auto;
+    background-color: rgb(132, 136, 139);
+}
+
+#payment_customer_details {
+    margin: 2%;
+}
+
+#payment_tariff_details {
+    margin: 2%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1% 2%;
+}

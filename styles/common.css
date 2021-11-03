@@ -11,4 +11,16 @@
 body{
     height: 100%;
     width: 100%;
+    background-color: #e0e0e0;
+    margin: 0;
+}
+
+
+
+header, footer {
+    background-color: rosybrown;
+}
+
+.bold_text {
+    font-weight: bold;
 }

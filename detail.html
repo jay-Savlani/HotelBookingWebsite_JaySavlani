@@ -12,14 +12,17 @@
 
 <body>
     <header>
-         <!-- Making logo image a link -->
-        <a href="index.html" ><img id="logo_image" src="assests/images/logo.png"></a>
-        <a href="login.html" >Login</a>
+        <!-- Making logo image a link -->
+        <a href="index.html"><img id="logo_image" src="assests/images/logo.png"></a>
+        <a href="login.html">Login</a>
     </header>
     <section>
-        <img class="detail_hotel_images" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
-            alt="Radisson Blu Hotel">
-        <div>
+        <div id="hotel_detail_image">
+            <img class="detail_hotel_images"
+                src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                alt="Radisson Blu Hotel">
+        </div>
+        <div id="hotel_detail_form">
             <form action="payment.html" method="GET">
                 <label for="num_of_adults">Adults:</label>
                 <input type="number" name="num_of_adults" id="num_of_adults" min="1" required /><br>
@@ -33,31 +36,37 @@
                 <input type="number" name="book_total" id="book_total" disabled /><br>
                 <button type="submit">Book Now</button>
             </form>
-          
+
         </div>
-        <h2>Radisson Blu Hotel</h2>
-        <p>RATING</p>
-        <P>5 STAR</P>
-        <p>AMENITIES</p>
-        <ul>
-            <li>Room Service</li>
-            <li>Restaurant</li>
-            <li>Business Center</li>
-            <li>Fitness Center</li>
-            <li>Pool</li>
-        </ul>
-        <h5>DESCRIPTION</h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis illum dignissimos culpa, possimus id
-            aliquid eos corporis corrupti iste aspernatur ea quas eius. Impedit ratione explicabo architecto nesciunt,
-            velit accusantium?</p>
+        <div id="hotel_detail_description">
+            <h2>Radisson Blu Hotel</h2>
+            <p>RATING</p>
+            <P>5 STAR</P>
+            <p>AMENITIES</p>
+            <ul>
+                <li>Room Service</li>
+                <li>Restaurant</li>
+                <li>Business Center</li>
+                <li>Fitness Center</li>
+                <li>Pool</li>
+            </ul>
+            <h5>DESCRIPTION</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis illum dignissimos culpa, possimus id
+                aliquid eos corporis corrupti iste aspernatur ea quas eius. Impedit ratione explicabo architecto
+                nesciunt,
+                velit accusantium?</p>
+        </div>
 
     </section>
     <footer>
         <p><a href="#">View more >></a></p>
-        <p><a href="contact.html" >Contact Us</a></p>
-        <a href="https://www.facebook.com/" target="_blank"><img class="footer_social_media_images" src="assests/images/facebook.png" alt="Facebook Logo"  /></a>
-        <a href="https://www.instagram.com/" target="_blank"><img class="footer_social_media_images" src="assests/images/instagram.png" alt="Instagram Logo"  /></a>
-        <a href="https://www.twitter.com/" target="_blank"><img class="footer_social_media_images" src="assests/images/twitter.png" alt="Twitter Logo"  /></a>
+        <p><a href="contact.html">Contact Us</a></p>
+        <a href="https://www.facebook.com/" target="_blank"><img class="footer_social_media_images"
+                src="assests/images/facebook.png" alt="Facebook Logo" /></a>
+        <a href="https://www.instagram.com/" target="_blank"><img class="footer_social_media_images"
+                src="assests/images/instagram.png" alt="Instagram Logo" /></a>
+        <a href="https://www.twitter.com/" target="_blank"><img class="footer_social_media_images"
+                src="assests/images/twitter.png" alt="Twitter Logo" /></a>
         <p>&copy; ROOM SEARCH PVT. LTD.</p>
     </footer>
 </body>
