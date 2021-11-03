@@ -10,13 +10,29 @@
 
 <body>
     <header>
-        <img src="assests/images/logo.png" height="100px" width="150px" alt="logo">
-        <a href="login.html" target="_blank">Login</a>
+         <!-- Making logo image a link -->
+        <a href="index.html" ><img src="assests/images/logo.png" height="100px" width="150px" alt="logo"></a>
+        <a href="login.html" >Login</a>
     </header>
     <section>
         <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
             alt="Radisson Blu Hotel">
-        <p><a href="payment.html">Book Now</a></p>
+        <div>
+            <form action="payment.html" method="GET">
+                <label for="num_of_adults">Adults:</label>
+                <input type="number" name="num_of_adults" id="num_of_adults" min="1" required /><br>
+                <label for="book_name">Name:</label>
+                <input type="text" name="book_name" id="book_name" required /><br>
+                <label for="book_from_date">From Date:</label>
+                <input type="date" name="book_from_date" id="book_from_date" required /><br>
+                <label for="book_to_date">To Date:</label>
+                <input type="date" name="book_to_date" id="book_to_date" required /><br>
+                <label for="book_total">Total:</label>
+                <input type="number" name="book_total" id="book_total" disabled /><br>
+                <button type="submit">Book Now</button>
+            </form>
+          
+        </div>
         <h2>Radisson Blu Hotel</h2>
         <p>RATING</p>
         <P>5 STAR</P>
@@ -36,7 +52,7 @@
     </section>
     <footer>
         <p><a href="#">View more >></a></p>
-        <p><a href="contact.html" target="_blank">Contact Us</a></p>
+        <p><a href="contact.html" >Contact Us</a></p>
         <a href="https://www.facebook.com/" target="_blank"><img src="assests/images/facebook.png" alt="Facebook Logo" height="20px" width="22px" /></a>
         <a href="https://www.instagram.com/" target="_blank"><img src="assests/images/instagram.png" alt="Instagram Logo" height="20px" width="22px" /></a>
         <a href="https://www.twitter.com/" target="_blank"><img src="assests/images/twitter.png" alt="Twitter Logo" height="20px" width="22px" /></a>
