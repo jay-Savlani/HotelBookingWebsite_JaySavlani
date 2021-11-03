@@ -4,12 +4,6 @@
     border-radius: 25%;
 }
 
-.footer_social_media_images {
-    height: 20px;
-    width: 22px;
-}
-
-
 
 #search_bar {
     background-image: url('https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg');
@@ -17,7 +11,15 @@
     background-position: center center;
     background-repeat: no-repeat;
     height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
 }
+
+
+
+
 
 .city_cards {
     /* border: 2px solid red; */

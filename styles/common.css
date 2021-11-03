@@ -1,6 +1,24 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.bold_text {
+    font-weight: bold;
+}
+
 #logo_image {
     height: 60px;
     width: 60px;
+    margin: 0% auto;
+}
+
+#login {
+    margin-right: 15px;
 }
 
 .footer_social_media_images {
@@ -8,19 +26,50 @@
     width: 22px;
 }
 
-body{
+body {
     height: 100%;
     width: 100%;
     background-color: #e0e0e0;
     margin: 0;
 }
 
+header {}
 
+#search_city_input {
+    background-color: #f1f1f1;
+    border: 1px solid transparent;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 12px;
+    width: 300px;
+}
 
 header, footer {
     background-color: rosybrown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    bottom: 0%;
 }
 
-.bold_text {
-    font-weight: bold;
+#social_media_group {
+    order: 1;
+    margin-right: 10px;
+}
+
+#copyright {
+    margin: 0%;
+    align-self: flex-end;
+    font-size: 12px;
+}
+
+#contact_us {
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+#view_more_link {
+    text-align: center;
 }

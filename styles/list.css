@@ -8,3 +8,31 @@
    margin: 2%;
    width: 40%;
 }
+
+#map-view {
+    display: none;
+}
+
+#list-view {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#list_links {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+#list_view_link {
+    margin-right: 20px;
+    font-weight: bold;
+   
+}
+
+#map_view_link {
+    margin-left: 20px;
+    font-weight: bold;
+}

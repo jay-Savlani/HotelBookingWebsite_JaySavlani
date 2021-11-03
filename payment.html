@@ -6,6 +6,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/payment.css">
 </head>
@@ -13,8 +14,8 @@
 <body>
     <header>
          <!-- Making logo image a link -->
-        <a href="index.html" ><img id="logo_image" src="assests/images/logo.png"  alt="logo"></a>
-        <a href="login.html" >Login</a>
+        <a id="logo" href="index.html" ><img id="logo_image" src="assests/images/logo.png"  alt="logo"></a>
+        <a  id="login" href="login.html" >Login</a>
     </header>
     <section>
         <!-- Hotel Details -->
@@ -45,12 +46,17 @@
         <p><a href="#">Pay Now</a></p>
     </section>
     <footer>
-        <p><a href="#">View more >></a></p>
-        <p><a href="contact.html">Contact Us</a></p>
-        <a href="https://www.facebook.com/" target="_blank"><img class="footer_social_media_images" src="assests/images/facebook.png" alt="Facebook Logo" /></a>
-        <a href="https://www.instagram.com/" target="_blank"><img class="footer_social_media_images" src="assests/images/instagram.png" alt="Instagram Logo" /></a>
-        <a href="https://www.twitter.com/" target="_blank"><img class="footer_social_media_images" src="assests/images/twitter.png" alt="Twitter Logo" /></a>
-        <p>&copy; ROOM SEARCH PVT. LTD.</p>
+        <p id="contact_us"><a  href="contact.html">Contact Us</a></p>
+        <div id="social_media_group">
+            <a href="https://www.facebook.com/" target="_blank"><img class="footer_social_media_images"
+                    src="assests/images/facebook.png" alt="Facebook Logo" /></a>
+            <a href="https://www.instagram.com/" target="_blank"><img class="footer_social_media_images"
+                    src="assests/images/instagram.png" alt="Instagram Logo" /></a>
+            <a href="https://www.twitter.com/" target="_blank"><img class="footer_social_media_images"
+                    src="assests/images/twitter.png" alt="Twitter Logo" /></a>
+        </div>
+
+        <p id="copyright">&copy; ROOM SEARCH PVT. LTD.</p>
     </footer>
 </body>
 
