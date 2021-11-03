@@ -4,9 +4,17 @@
 }
 
 .list_view_cards {
-   background-color: rgb(132, 136, 139);
-   margin: 2%;
-   width: 40%;
+   background-color: lightgrey;
+   
+   /* width: 40%; */
+   display: flex;
+   max-height: 200px;
+    min-width: 35%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
 }
 
 #map-view {
@@ -14,9 +22,13 @@
 }
 
 #list-view {
+    min-height: 100vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 2%;
+    align-content: center;
 }
 
 #list_links {
@@ -36,3 +48,9 @@
     margin-left: 20px;
     font-weight: bold;
 }
+
+.list_view_description {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+

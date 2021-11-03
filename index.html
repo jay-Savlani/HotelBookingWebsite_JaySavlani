@@ -14,47 +14,77 @@
 <body>
     <header>
         <!-- Making logo image a link -->
-        
-            <a  id="logo"><img id="logo_image" src="assests/images/logo.png" alt="logo"></a>
-        
-       
-            <a  id="login" href="login.html">Login</a>
-        
+
+        <a id="logo"><img id="logo_image" src="assests/images/logo.png" alt="logo"></a>
+
+
+        <a id="login" href="login.html">Login</a>
+
     </header>
-    <section>
+    <section id="content_div">
         <div id="search_bar">
             <!-- Replacing Search Bar text with input field -->
-            
-                <input id="search_city_input" type="text" name="searched_city" placeholder="City" />
-            
+
+            <input id="search_city_input" type="text" name="searched_city" placeholder="City" />
+
         </div>
         <div id="card_group">
             <div class="city_cards">
-                <a href="list.html"><img class="hotel_images"
-                        src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" alt="Delhi City"
-                        height="300px" width="300px" /></a>
-            </div>
-            <div class="city_cards">
-                <img class="hotel_images" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg"
-                    alt="Goa City" height="300px" width="300px" />
-            </div>
-            <div class="city_cards">
-                <img class="hotel_images"
-                    src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" alt="Hyderabad City"
-                    height="300px" width="300px" />
-            </div>
-            <div class="city_cards">
-                <img class="hotel_images"
-                    src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"
-                    alt="Kolkata City" height="300px" width="300px" />
+                <div class="image_div">
+                    <a href="list.html">
+                        <img class="hotel_images"
+                            src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"
+                            alt="Delhi City" />
+                            <div class="overlay_card"></div>
+                            <div class="overlay_text">
+                                <p>Delhi</p>
+                            </div>
+                    </a>
+                </div>
+
             </div>
 
+            <div class="city_cards">
+                <div class="image_div">
+                    <img class="hotel_images" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg"
+                        alt="Goa City" />
+                        <div class="overlay_card"></div>
+                    <div class="overlay_text">
+                        <p>Goa</p>
+                    </div>
+                </div>
+            </div>
+            <div class="city_cards">
+                <div class="image_div">
+                    <img class="hotel_images"
+                        src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg"
+                        alt="Hyderabad City" />
+                        <div class="overlay_card"></div>
+                    <div class="overlay_text">
+                        <p>Hyderabad</p>
+                    </div>
+                </div>
+            </div>
+            <div class="city_cards">
+                <div class="image_div">
+                    <img class="hotel_images"
+                        src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"
+                        alt="Kolkata City" />
+                        <div class="overlay_card"></div>
+                    <div class="overlay_text">
+                        <p>Kolkata</p>
+                    </div>
+                </div>
+            </div>
+        
         </div>
+        
         <p id="view_more_link"><a class="color-black text-decoration-none" href="#">View more >></a></p>
+
     </section>
     <footer>
 
-        <p id="contact_us"><a  href="contact.html">Contact Us</a></p>
+        <p id="contact_us"><a href="contact.html">Contact Us</a></p>
         <div id="social_media_group">
             <a href="https://www.facebook.com/" target="_blank"><img class="footer_social_media_images"
                     src="assests/images/facebook.png" alt="Facebook Logo" /></a>

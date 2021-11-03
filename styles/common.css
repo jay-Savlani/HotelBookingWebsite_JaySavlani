@@ -14,11 +14,12 @@ a{
 #logo_image {
     height: 60px;
     width: 60px;
-    margin: 0% auto;
+    margin-left: 1%;
+
 }
 
 #login {
-    margin-right: 15px;
+    margin-right: 2%;
 }
 
 .footer_social_media_images {
@@ -31,6 +32,11 @@ body {
     width: 100%;
     background-color: #e0e0e0;
     margin: 0;
+}
+
+html {
+    height: 100%;
+    width: 100%;
 }
 
 header {}
@@ -50,8 +56,15 @@ header, footer {
     justify-content: space-between;
     align-items: center;
     position: sticky;
-    top: 0%;
+
+}
+
+footer {
     bottom: 0%;
+}
+
+header {
+    top: 0%;
 }
 
 #social_media_group {
@@ -60,8 +73,7 @@ header, footer {
 }
 
 #copyright {
-    margin: 0%;
-    align-self: flex-end;
+    
     font-size: 12px;
 }
 

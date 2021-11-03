@@ -13,40 +13,51 @@
 
 <body>
     <header>
-         <!-- Making logo image a link -->
-        <a id="logo" href="index.html" ><img id="logo_image" src="assests/images/logo.png"  alt="logo"></a>
-        <a  id="login" href="login.html" >Login</a>
+        <!-- Making logo image a link -->
+        <a id="logo" href="index.html"><img id="logo_image" src="assests/images/logo.png" alt="logo"></a>
+        <a id="login" href="login.html">Login</a>
     </header>
-    <section>
+    <section id="main_container">
         <!-- Hotel Details -->
-        <div id="payment_hotel_description">
-            <img class="payment_hotel_images" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
-            alt="Radisson Blu Hotel" />
-            <h2>Radisson Blu Hotel</h2>
-            <p>#38 of 1289 hotels in New Delhi</p>
-            <p>National Highway 8, New Delhi 110017</p>
+
+        <div id="inner_container">
+            <div>
+                <img class="payment_hotel_images"
+                    src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                    alt="Radisson Blu Hotel" />
+            </div>
+            <div class="payment_hotel_description">
+                <h2>Radisson Blu Hotel</h2>
+                <p>#38 of 1289 hotels in New Delhi</p>
+                <p>National Highway 8, New Delhi 110017</p>
+            </div>
 
         </div>
-        <br>
+
         <!-- Payment and Customer Details -->
-        <div id="payment_customer_details">
-            <!-- Customer Details -->
-            <p><span class="bold_text">Name</span> : John Doe</p>
-            <p><span class="bold_text">Number of Adults</span> : 2</p>
-            <p><span class="bold_text">Check-in Date</span> : 06/06/2020</p>
-            <p><span class="bold_text">Check-out Date</span> : 06/06/2020</p>
-            
+        <div id="inner_payment_container">
+            <div id="payment_customer_details">
+                <!-- Customer Details -->
+                <p><span class="font_cursive bold_text">Name</span> : John Doe</p>
+                <p><span class="font_cursive bold_text">Number of Adults</span> : 2</p>
+                <p><span class="font_cursive bold_text">Check-in Date</span> : 06/06/2020</p>
+                <p><span class="font_cursive bold_text">Check-out Date</span> : 06/06/2020</p>
+
+            </div>
+            <div id="payment_tariff_details">
+                <!-- Payment Details -->
+                <p><span class="font_cursive bold_text">Tariff Breakdown</span> : Rs. 1000 x 2 Adults x 5 Nights</p>
+                <p><span class="font_cursive bold_text">Total Amount</span> : Rs 10000</p>
+
+            </div>
+            <div>
+                <p><a href="#">Pay Now</a></p>
+            </div>
+
         </div>
-        <div id="payment_tariff_details">
-            <!-- Payment Details -->
-            <p><span class="bold_text">Tariff Breakdown</span> : Rs. 1000 x 2 Adults x 5 Nights</p>
-            <p><span class="bold_text">Total Amount</span> : Rs 10000</p>
-            
-        </div>
-        <p><a href="#">Pay Now</a></p>
     </section>
     <footer>
-        <p id="contact_us"><a  href="contact.html">Contact Us</a></p>
+        <p id="contact_us"><a href="contact.html">Contact Us</a></p>
         <div id="social_media_group">
             <a href="https://www.facebook.com/" target="_blank"><img class="footer_social_media_images"
                     src="assests/images/facebook.png" alt="Facebook Logo" /></a>
@@ -61,4 +72,3 @@
 </body>
 
 </html>
-
