@@ -9,8 +9,11 @@
 
 
 #content_div {
+    min-width: 100%;
+    min-height: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .image_div {
@@ -40,6 +43,7 @@
 #search_city_input {
     border: 1px solid transparent;
     background-color: #f1f1f1;
+    
 }
 
 #search_city_input:focus {
@@ -90,6 +94,7 @@
 
 #card_group {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
    
@@ -99,7 +104,38 @@
     width:100%;
 }
 
+/* Minimum width */
+@media only screen and (max-width: 576px) {
+    /* Converting card group to column flex box */
+    #card_group {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+     /* Changing width of input search text */
+   #search_city_input {
+    width: 50%;
+}
 
+}
+@media only screen and (max-width: 768px) and (min-width: 575px) {
+    /* Giving flex basis of 50% which will make two children occupy a row in flex box */
+    .city_cards {
+        flex-basis: 50%;
+    }
+    /* Providing padding to image_div class  */
+    .image_div {
+        padding-left: 20%;
+    }
+    
+}
+/* Maximum width */
+@media only screen and (min-width: 769px) {
+   /* Changing width of input search text */
+   #search_city_input {
+       width: 30%;
+   }
+}
 
 
 

@@ -7,6 +7,11 @@ a{
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
 .bold_text {
     font-weight: bold;
 }
@@ -32,11 +37,15 @@ body {
     width: 100%;
     background-color: #e0e0e0;
     margin: 0;
+    z-index: 1;
 }
 
 html {
+    
     height: 100%;
     width: 100%;
+    /* width: 100vw;
+    height: 100vh; */
 }
 
 footer * {
@@ -61,15 +70,20 @@ header, footer {
     justify-content: space-between;
     align-items: center;
     position: sticky;
+    max-width: 100%;
+    /* position: fixed; */
+    z-index: 2;
 
 }
 
 footer {
     bottom: 0%;
+    
 }
 
 header {
     top: 0%;
+    
 }
 
 #social_media_group {
@@ -106,3 +120,4 @@ header {
     justify-content: space-around;
     margin: 10px;
 }
+

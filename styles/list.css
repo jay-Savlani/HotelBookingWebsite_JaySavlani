@@ -1,54 +1,58 @@
 .list_hotel_images {
-    height: 200px;
-    width: 250px;
-}
-
-.list_view_cards {
-   background-color: lightgrey;
-   
-   /* width: 40%; */
-   display: flex;
-   max-height: 200px;
-    min-width: 35%;
-    margin-right: 5%;
-    margin-left: 5%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    
-}
-
-.list_view_cards:hover {
-    background-color: rosybrown;
-}
-
-#map-view {
-    /* display: none; */
+    max-height: 200px;
+    max-width: 100%;
 }
 
 #list-view {
     min-height: 100vh;
+    /* max-width: 100%; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    margin-top: 2%;
-    align-content: center;
+    /* border: 1px solid black; */
+    /* Margin is common across all screen sizes */
+    margin: 2%;
 }
 
-/* #list_links {
-    text-align: center;
-    margin-top: 10px;
-} */
+.list_view_cards {
+    background-color: lightgrey;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    /* margin-left: 3%;
+    margin-right: 3%; */
+}
+
+.list_view_cards:hover {
+    background-color: rosybrown;
+    text-decoration: none;
+    color: black;
+}
+
+#map-view {
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+.map_images {
+    max-width: 100%;
+}
 
 .nav_margin {
     margin-top: 10px;
 }
 
-
 #list_view_link {
     margin-right: 20px;
     font-weight: bold;
-   
 }
 
 #map_view_link {
@@ -56,11 +60,79 @@
     font-weight: bold;
 }
 
-.list_view_description {
-    margin-left: 20px;
-    margin-right: 20px;
-}
+
 
 .checked {
     color: orange;
+}
+
+/* Min width */
+
+@media only screen and (max-width: 576px) {
+    /* Making list view flex box direction as column */
+    #list-view {
+        flex-direction: column;
+    }
+    
+    /* Making list_view cards display as column  */
+
+    .list_view_cards {
+        flex-direction: column;
+    }
+
+    /* Fixing width of image_div */
+    
+}
+
+@media only screen and (max-width: 768px) and (min-width: 575px) {
+    /* Coverting list view to column flexbox */
+    #list-view {
+        flex-direction: column;
+        justify-content: space-around;
+        /* For equal spacing between cards */
+    }
+    /* Adding margin for hotel_description */
+    .list_view_description {
+        margin: 2% 2%;
+    }
+    /* Fixing width of image_div */
+    .image_div {
+        width: 50%;
+    }
+    /* Fixing width and height of image */
+    .list_hotel_images {
+        height: 90%;
+        width: 100%;
+        /* Relative to image div which is 50% in width of list view card */
+    }
+    /* Specifying minimmum height of list view cards */
+    .list_view_cards {
+        min-height: 45vh;
+    }
+}
+
+/* Max width */
+
+@media only screen and (min-width: 769px) {
+    /* Changin list-view flexbox */
+    #list-view {
+        justify-content: space-around;
+        align-content: space-around;
+        /* List view cannot exeed width of body */
+        max-width: 100%;
+    }
+    /* List view cards cannot exeed maximum width of list view */
+    .list_view_cards {
+        max-width: 100%;
+    }
+    /* Specifying max width of list_view_cards */
+    .list_view_cards {
+       
+        max-width: 40%;
+        
+    }
+    /* Adding margin for hotel_description */
+    .list_view_description {
+        margin: 2% 2%;
+    }
 }
