@@ -100,6 +100,13 @@
    
 }
 
+#view-more-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
 #view_more_link {
     width:100%;
 }
