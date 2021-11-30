@@ -22,7 +22,7 @@
     display: flex;
 }
 
-#form_div {}
+/* #form_div {} */
 
 #description_div {
     margin: 2% 0;
@@ -100,13 +100,13 @@ h5 {
 .carousel-control-next-icon:after {
     content: '>';
     font-size: 55px;
-    color: rosybrown;
+    color: black;
 }
 
 .carousel-control-prev-icon:after {
     content: '<';
     font-size: 55px;
-    color: rosybrown;
+    color: black;
 }
 
 .checked {

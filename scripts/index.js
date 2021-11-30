@@ -13,3 +13,9 @@ function viewMore() {
         viewMoreBtn.innerText = "View More";
     }
 }
+
+
+function getCityName() {
+        
+
+}

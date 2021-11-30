@@ -31,15 +31,15 @@
         <!-- Hotel Details -->
 
         <div id="inner_container">
-            <div class="image_container" >
-                <img class="payment_hotel_images"
+            <div id="image_container" class="image_container" >
+                <!-- <img class="payment_hotel_images"
                     src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
-                    alt="Radisson Blu Hotel" />
+                    alt="Radisson Blu Hotel" /> -->
             </div>
             <div class="payment_hotel_description">
-                <h2>Radisson Blu Hotel</h2>
-                <p>#38 of 1289 hotels in New Delhi</p>
-                <p>National Highway 8, New Delhi 110017</p>
+                <h2 id="hotel_name">Radisson Blu Hotel</h2>
+                <p id="hotel_ranking">#38 of 1289 hotels in New Delhi</p>
+                <p id="hotel_address">National Highway 8, New Delhi 110017</p>
             </div>
 
         </div>
@@ -48,16 +48,16 @@
         <div id="inner_payment_container">
             <div id="payment_customer_details">
                 <!-- Customer Details -->
-                <p><span class="font_cursive bold_text">Name</span> : John Doe</p>
-                <p><span class="font_cursive bold_text">Number of Adults</span> : 2</p>
-                <p><span class="font_cursive bold_text">Check-in Date</span> : 06/06/2020</p>
-                <p><span class="font_cursive bold_text">Check-out Date</span> : 06/06/2020</p>
+                <p><span class="font_cursive bold_text">Name</span> : <span id="booking_name"> </span></p>
+                <p><span class="font_cursive bold_text">Number of Adults</span> : <span id="booking_numOfAdults"></span></p>
+                <p><span class="font_cursive bold_text">Check-in Date</span> : <span id="booking_fromDate"></span></p>
+                <p><span class="font_cursive bold_text">Check-out Date</span> : <span id="booking_toDate"></span></p>
 
             </div>
             <div id="payment_tariff_details">
                 <!-- Payment Details -->
-                <p><span class="font_cursive bold_text">Tariff Breakdown</span> : Rs. 1000 x 2 Adults x 5 Nights</p>
-                <p><span class="font_cursive bold_text">Total Amount</span> : Rs 10000</p>
+                <p><span class="font_cursive bold_text">Tariff Breakdown</span> :<span id="tariff_breakdown"> Rs. 1000 x 2 Adults x 5 Nights</span></p>
+                <p><span class="font_cursive bold_text">Total Amount</span> : <span id="booking_totalAmount">Rs. </span></p>
 
             </div>
             <div id="pay_now_button">
@@ -81,3 +81,5 @@
 </body>
 
 </html>
+
+
