@@ -3,7 +3,7 @@
     height: 150px;
     border-radius: 25%;
     box-shadow: 10px 10px 10px grey;
-    
+
 }
 
 
@@ -20,7 +20,7 @@
     position: relative;
 }
 
-.city_cards:hover .overlay_card{
+.city_cards:hover .overlay_card {
     opacity: 1;
 }
 
@@ -35,19 +35,48 @@
     background-repeat: no-repeat;
     height: 380px;
     display: flex;
+    flex-direction: column;
+    /* Changed */
     justify-content: center;
     align-items: center;
     width: 100%;
 }
 
-#search_city_input {
-    border: 1px solid transparent;
+.search_city_input {
     background-color: #f1f1f1;
-    
+    border: 1px solid transparent;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 12px;
+    width: 300px;
+    position: relative;
+
 }
 
-#search_city_input:focus {
+/* .auto_complete_links {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+} */
+
+
+
+.search_city_input:focus {
     outline: none;
+}
+
+
+
+
+#autoComplete_items {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
 }
 
 
@@ -74,22 +103,22 @@
     justify-content: center;
     align-items: center;
     opacity: 0;
-    
+
 }
 
 .overlay_text p {
     text-align: center;
-    color:  #f1f1f1;
-   
+    color: #f1f1f1;
+
 }
 
 .city_cards {
     /* border: 2px solid red; */
     position: relative;
-   padding: 4%;
-   display: inline-block;
-   margin: 0;
-  
+    padding: 4%;
+    display: inline-block;
+    margin: 0;
+
 }
 
 #card_group {
@@ -97,7 +126,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
-   
+
 }
 
 #view-more-cards {
@@ -108,41 +137,73 @@
 }
 
 #view_more_link {
-    width:100%;
+    width: 100%;
 }
 
 /* Minimum width */
 @media only screen and (max-width: 576px) {
+
     /* Converting card group to column flex box */
     #card_group {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
     }
-     /* Changing width of input search text */
-   #search_city_input {
-    width: 50%;
-}
+
+    #view-more-cards {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /* Changing width of input search text */
+    .search_city_input {
+        width: 50%;
+    }
+
+    #autoComplete_items {
+        width: 50%;
+    }
 
 }
+
 @media only screen and (max-width: 768px) and (min-width: 575px) {
+
     /* Giving flex basis of 50% which will make two children occupy a row in flex box */
     .city_cards {
         flex-basis: 50%;
     }
+
     /* Providing padding to image_div class  */
     .image_div {
         padding-left: 20%;
     }
-    
+
 }
+
 /* Maximum width */
 @media only screen and (min-width: 769px) {
-   /* Changing width of input search text */
-   #search_city_input {
-       width: 30%;
-   }
+
+    /* Changing width of input search text */
+    .search_city_input {
+        width: 30%;
+    }
+
+    #autoComplete_items {
+        width: 30%;
+    }
 }
 
 
 
+/* Hiding content for loader */
+
+#content_div {
+    display: none;
+}
+
+
+
+.search_city_input_autoComplete {
+    width: 100%;
+}

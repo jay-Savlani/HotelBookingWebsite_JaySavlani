@@ -15,6 +15,7 @@ function getFromDate() {
 
 
 
+
 function getToDate() {
     let toDate = document.getElementById("book_to_date");
     let date = new Date(toDate.value);
@@ -25,6 +26,11 @@ function getToDate() {
     return toDateNumber;
 }
 
+function setInitialPrice() {
+    document.getElementById("book_total").value = `Rs. 0`;
+}
+
+setInitialPrice();
 
 function getPrice() {
     let total = document.getElementById("book_total");
@@ -34,8 +40,8 @@ function getPrice() {
     let price = (toDate - fromDate) * numAdults * 1000;
 
     // console.log("Price ",price);
-    if (price == Number.NaN) {
-        total.value = "";
+    if (price == `${Number.NaN}`) {
+        total.value = "Rs. 0";
 
     }
     else if (price != NaN) {

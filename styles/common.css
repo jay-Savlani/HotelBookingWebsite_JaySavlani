@@ -55,14 +55,7 @@ footer * {
 
 
 
-#search_city_input {
-    background-color: #f1f1f1;
-    border: 1px solid transparent;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 12px;
-    width: 300px;
-}
+
 
 header, footer {
     background-color: rosybrown;
@@ -119,5 +112,13 @@ header {
     display: flex;
     justify-content: space-around;
     margin: 10px;
+}
+
+
+
+ /* Hiding header and footer for loader */
+
+#header-div, #footer-div {
+    display: none;
 }
 

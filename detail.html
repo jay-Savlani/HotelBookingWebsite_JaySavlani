@@ -18,11 +18,15 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+
+        
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/detail.css">
+    <link rel="stylesheet" href="styles/loader.css">
 
 
 
@@ -30,6 +34,9 @@
 </head>
 
 <body>
+    
+    <div id="loader_image"></div>
+    
     <header id="header-div">
        
     </header>
@@ -74,7 +81,7 @@
                         </div>
                         <div class="input_div">
 
-                            <input onblur="getAdults();getPrice()" type="number" name="num_of_adults" id="num_of_adults" min="1" required />
+                            <input oninput="getAdults()" type="number" name="num_of_adults" id="num_of_adults" min="1" required />
                         </div>
 
                     </div>
@@ -91,7 +98,7 @@
                             <label for="book_from_date">From Date:</label>
                         </div>
                         <div class="input_div">
-                            <input onblur="getFromDate();getPrice()" type="date" name="book_from_date" id="book_from_date" required />
+                            <input oninput="getFromDate()" type="date" name="book_from_date" id="book_from_date" required />
                         </div>
                     </div>
                     <div class="form_row">
@@ -99,7 +106,7 @@
                             <label for="book_to_date">To Date:</label>
                         </div>
                         <div class="input_div">
-                            <input onfocus="hidePreviousDates()" onblur="getToDate();getPrice()" type="date" name="book_to_date" id="book_to_date" required />
+                            <input onfocus="hidePreviousDates()" oninput="getToDate();getPrice()" type="date" name="book_to_date" id="book_to_date" required />
                         </div>
                     </div>
                     <div class="form_row">
@@ -162,6 +169,18 @@
 
     <script src="scripts/common.js"></script>
     <script src="scripts/detail.js"></script>
+    <script>
+        $(window).on('load',function() {
+            $("#loader_image").fadeOut(1000 , function() {
+                $("#content_div").fadeIn(1000);
+                $("#header-div").fadeIn(1000);
+                $("#footer-div").fadeIn(1000);
+
+            });
+            
+            
+        })
+    </script>
 </body>
 
 

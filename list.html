@@ -18,9 +18,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/loader.css">
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/list.css">
 
@@ -29,8 +31,11 @@
 </head>
 
 <body>
+
+    <div id="loader_image"></div>
+
     <header id="header-div">
-       
+
 
     </header>
     <section>
@@ -48,24 +53,26 @@
                     aria-controls="pills-profile" aria-selected="false">Map View</a>
             </li>
 
+
         </ul>
         <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                
+
                 <!-- <a id="detail_link" class="list_view_cards" href="detail.html"> -->
                 <article id="list-view">
 
-                    
+
                     <!-- <div class="list_view_cards">
+                        <a class="clickableDiv" href="detail.html"></a>
                         <div class="image_div">
-                            <a id="detail_link" href="detail.html">
+                           
                                 <img class="list_hotel_images"
                                     src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
                                     alt="Radisson Blu Hotel" />
-                            </a>
+                            
                         </div>
                         <div class="list_view_description">
-                            <a id="detail_link" href="detail.html">
+                            
                             <h3>Radisson Blu Hotel</h3>
                             <p>
                                 <span class="fa fa-star checked "></span>
@@ -80,6 +87,7 @@
                     </div>
                     
                     <div class="list_view_cards">
+                        <a class="clickableDiv" href="detail.html"></a>
                         <div class="image_div">
                             <img class="list_hotel_images"
                                 src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg"
@@ -100,6 +108,7 @@
 
 
                     <div class="list_view_cards">
+                        <a class="clickableDiv" href="detail.html"></a>
                         <div class="image_div">
                             <img class="list_hotel_images"
                                 src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg"
@@ -122,9 +131,9 @@
             </div>
             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                 <article id="map-view">
-                    <div>
-                        <img class="map_images"
-                            src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="Map View">
+                    <div id="map">
+                        <!-- <img class="map_images"
+                            src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="Map View"> -->
                     </div>
                     <!-- <p>MAP VIEW</p> -->
                 </article>
@@ -137,18 +146,37 @@
 
     </section>
     <footer id="footer-div">
-       
+
     </footer>
 
     <!-- Modal -->
     <div id="modal-div">
-    
+
     </div>
 
     <script src="scripts/common.js"></script>
     <script src="scripts/list.js"></script>
+    <script>
+        $(window).on('load', function () {
+            $("#loader_image").fadeOut(1000, function () {
+                $("#content_div").fadeIn(1000);
+                $("#header-div").fadeIn(1000);
+                $("#footer-div").fadeIn(1000);
+                $(".nav-item").fadeIn(1000);
+
+            });
+
+
+        })
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBatdm9F4ZKigpQSRQHwVHpRmKx-IxFvhE"></script>
+
+
 </body>
 
 
 
 </html>
+
+

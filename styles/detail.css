@@ -187,3 +187,15 @@ h5 {
         /* Sincle width of carouselExampleControls is fixed to be 100% */
     }
 }
+
+
+
+
+
+
+
+/* Hiding content for loader */
+
+#content_div {
+    display: none;
+}

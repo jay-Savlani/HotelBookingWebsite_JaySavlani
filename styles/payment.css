@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: column;
     min-height: 100%;
+
     
 }
 
@@ -22,6 +23,8 @@
     /* Margin */
     margin-left: 5%;
     margin-right: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     /* Maximum width can be width of main container */
     max-width: 100%;
 }
@@ -38,6 +41,11 @@
     margin-right: 5%;
     /* Maximum width can be width of main container */
     max-width: 100%;
+}
+
+.payment_hotel_description {
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .font_cursive {
@@ -155,4 +163,16 @@
     }
 
     
+}
+
+
+
+
+
+
+
+/* Hiding content for loader */
+
+#main_container {
+    display: none;
 }

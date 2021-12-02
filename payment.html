@@ -17,13 +17,19 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+
     <title>Payment</title>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/payment.css">
+    <link rel="stylesheet" href="styles/loader.css">
 </head>
 
 <body>
+    
+    <div id="loader_image"></div>
+    
     <header id="header-div">
      
     </header>
@@ -62,7 +68,7 @@
             </div>
             <div id="pay_now_button">
                 <!-- <p><a href="#">Pay Now</a></p> -->
-                <a href="#"><button  id="pay-now-btn" type="button" class="btn btn-success">Pay Now</button></a>
+                <a href="#"><button  id="pay-now-btn" type="button" class="btn btn-success" onclick="alert('Hii..Your Booking is successful..!')" >Pay Now</button></a>
             </div>
 
         </div>
@@ -78,6 +84,18 @@
 
     <script src="scripts/common.js"></script>
     <script src="scripts/payment.js"></script>
+    <script>
+        $(window).on('load',function() {
+            $("#loader_image").fadeOut(1000 , function() {
+                $("#main_container").fadeIn(1000);
+                $("#header-div").fadeIn(1000);
+                $("#footer-div").fadeIn(1000);
+
+            });
+            
+            
+        })
+    </script>
 </body>
 
 </html>
