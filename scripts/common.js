@@ -1,5 +1,7 @@
 localStorage.setItem("isUserLoggedIn","false");
 
+
+
 function headerTemplate() {
     let headerTemplateString  =  `
     <!-- Making logo image a link -->
